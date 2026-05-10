@@ -1,0 +1,13 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "item": "createadditions:broken_pickaxe"
+    }
+  ],
+  "results": [
+    {
+      "id": "createadditions:fixed_pickaxe"
+    }
+  ]
+}

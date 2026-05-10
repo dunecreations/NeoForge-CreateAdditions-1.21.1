@@ -1,0 +1,13 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "item": "createadditions:broken_hoe"
+    }
+  ],
+  "results": [
+    {
+      "id": "createadditions:fixed_hoe"
+    }
+  ]
+}

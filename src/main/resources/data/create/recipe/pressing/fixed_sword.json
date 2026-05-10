@@ -1,0 +1,13 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "item": "createadditions:broken_sword"
+    }
+  ],
+  "results": [
+    {
+      "id": "createadditions:fixed_sword"
+    }
+  ]
+}

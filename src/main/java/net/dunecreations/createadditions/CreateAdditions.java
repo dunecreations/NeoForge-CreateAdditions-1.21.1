@@ -38,6 +38,7 @@ public class CreateAdditions {
         NeoForge.EVENT_BUS.register(this);
 
         ModBrokenTools.register(modEventBus);
+        ModFixedTools.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -51,7 +52,7 @@ public class CreateAdditions {
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
-        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+        if(event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
             event.accept(ModBrokenTools.BROKEN_SWORD);
             event.accept(ModBrokenTools.BROKEN_AXE);
             event.accept(ModBrokenTools.BROKEN_PICKAXE);

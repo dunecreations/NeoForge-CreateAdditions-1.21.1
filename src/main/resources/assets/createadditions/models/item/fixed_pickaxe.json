@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "createadditions:createadditions/fixed_pickaxe"
+    "layer0": "createadditions:item/fixed_pickaxe"
   }
 }
