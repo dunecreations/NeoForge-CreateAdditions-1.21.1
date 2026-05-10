@@ -1,0 +1,13 @@
+{
+  "item.createadditions.broken_sword": "Broken Sword",
+  "item.createadditions.broken_axe": "Broken Axe",
+  "item.createadditions.broken_pickaxe": "Broken Pickaxe",
+  "item.createadditions.broken_shovel": "Broken Shovel",
+  "item.createadditions.broken_hoe": "Broken Hoe",
+
+  "item.createadditions.fixed_sword": "Fixed Sword",
+  "item.createadditions.fixed_axe": "Fixed Axe",
+  "item.createadditions.fixed_pickaxe": "Fixed Pickaxe",
+  "item.createadditions.fixed_shovel": "Fixed Shovel",
+  "item.createadditions.fixed_hoe": "Fixed Hoe"
+}

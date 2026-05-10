@@ -43,10 +43,10 @@ displayName="${mod_name}" #mandatory
 
 # The authors of the mod, displayed in the mod UI (optional)
 #authors=""
-
+authors="DuneCreations"
 # The description text for the mod (multi line!) (#mandatory)
 description='''
-Example mod description.
+Blah Blah Blah.
 '''
 
 # The [[mixins]] block allows you to declare your mixin config to FML so that it gets loaded.
@@ -93,3 +93,8 @@ Example mod description.
 # stop your mod loading on the server for example.
 #[features.${mod_id}]
 #openGLVersion="[3.2,)"
+
+[[dependencies.${mod_id}]]
+    modId="create"
+    type="required"
+    versionRange="1.21.1"
