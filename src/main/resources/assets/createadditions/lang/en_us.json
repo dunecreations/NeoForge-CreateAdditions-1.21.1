@@ -9,5 +9,10 @@
   "item.createadditions.fixed_axe": "Fixed Axe",
   "item.createadditions.fixed_pickaxe": "Fixed Pickaxe",
   "item.createadditions.fixed_shovel": "Fixed Shovel",
-  "item.createadditions.fixed_hoe": "Fixed Hoe"
+  "item.createadditions.fixed_hoe": "Fixed Hoe",
+
+  "item.createadditions.raw_darksteel": "Raw Darksteel",
+  "item.createadditions.darksteel_ingot": "Darksteel Ingot",
+  "item.createadditions.brinecore_shard": "Brinecore Shard",
+  "item.createadditions.tide_crystal": "Tide Crystal"
 }

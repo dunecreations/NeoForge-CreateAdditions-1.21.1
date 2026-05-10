@@ -2,6 +2,7 @@ package net.dunecreations.createadditions;
 
 import net.dunecreations.createadditions.item.ModBrokenTools;
 import net.dunecreations.createadditions.item.ModFixedTools;
+import net.dunecreations.createadditions.item.ModMineralItems;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -39,6 +40,7 @@ public class CreateAdditions {
 
         ModBrokenTools.register(modEventBus);
         ModFixedTools.register(modEventBus);
+        ModMineralItems.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -64,6 +66,12 @@ public class CreateAdditions {
             event.accept(ModFixedTools.FIXED_PICKAXE);
             event.accept(ModFixedTools.FIXED_SHOVEL);
             event.accept(ModFixedTools.FIXED_HOE);
+        }
+        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+            event.accept(ModMineralItems.RAW_DARKSTEEL);
+            event.accept(ModMineralItems.DARKSTEEL_INGOT);
+            event.accept(ModMineralItems.BRINECORE_SHARD);
+            event.accept(ModMineralItems.TIDE_CRYSTAL);
         }
     }
 
