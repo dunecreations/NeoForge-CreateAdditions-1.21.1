@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "createadditions:item/andesite_hoe"
+  }
+}

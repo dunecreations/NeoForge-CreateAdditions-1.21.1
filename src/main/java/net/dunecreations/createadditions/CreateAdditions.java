@@ -1,8 +1,7 @@
 package net.dunecreations.createadditions;
 
-import net.dunecreations.createadditions.item.ModBrokenTools;
-import net.dunecreations.createadditions.item.ModFixedTools;
-import net.dunecreations.createadditions.item.ModMineralItems;
+import net.dunecreations.createadditions.item.*;
+import net.dunecreations.createadditions.item.util.ModTags;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -41,6 +40,7 @@ public class CreateAdditions {
         ModBrokenTools.register(modEventBus);
         ModFixedTools.register(modEventBus);
         ModMineralItems.register(modEventBus);
+        ModTools.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -66,12 +66,29 @@ public class CreateAdditions {
             event.accept(ModFixedTools.FIXED_PICKAXE);
             event.accept(ModFixedTools.FIXED_SHOVEL);
             event.accept(ModFixedTools.FIXED_HOE);
+
+            event.accept(ModTools.BRASS_AXE);
+            event.accept(ModTools.BRASS_PICKAXE);
+            event.accept(ModTools.BRASS_SHOVEL);
+            event.accept(ModTools.BRASS_HOE);
+
+            event.accept(ModTools.ANDESITE_AXE);
+            event.accept(ModTools.ANDESITE_PICKAXE);
+            event.accept(ModTools.ANDESITE_SHOVEL);
+            event.accept(ModTools.ANDESITE_HOE);
         }
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModMineralItems.RAW_DARKSTEEL);
             event.accept(ModMineralItems.DARKSTEEL_INGOT);
             event.accept(ModMineralItems.BRINECORE_SHARD);
             event.accept(ModMineralItems.TIDE_CRYSTAL);
+        }
+        if(event.getTabKey() == CreativeModeTabs.COMBAT) {
+            event.accept(ModTools.BRASS_SWORD);
+            event.accept(ModTools.ANDESITE_SWORD);
+
+            event.accept(ModTools.BRASS_AXE);
+            event.accept(ModTools.ANDESITE_AXE);
         }
     }
 

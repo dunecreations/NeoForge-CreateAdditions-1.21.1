@@ -118,6 +118,7 @@ configurations {
 }
 
 dependencies {
+    implementation "com.simibubi.create:create-${minecraft_version}:${create_version}:slim"
     // Example optional mod dependency with JEI
     // The JEI API is declared for compile time use, while the full JEI artifact is used at runtime
     // compileOnly "mezz.jei:jei-${mc_version}-common-api:${jei_version}"
@@ -191,4 +192,15 @@ idea {
         downloadSources = true
         downloadJavadoc = true
     }
+repositories {
+    mavenLocal()
+
+    maven {
+        url = "https://maven.createmod.net"
+    }
+
+    maven {
+        url = "https://maven.terraformersmc.com/releases/"
+    }
+}
 }
