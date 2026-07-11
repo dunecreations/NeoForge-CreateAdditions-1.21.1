@@ -1,7 +1,6 @@
 package net.dunecreations.createadditions;
 
 import net.dunecreations.createadditions.item.*;
-import net.dunecreations.createadditions.item.util.ModTags;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -37,10 +36,10 @@ public class CreateAdditions {
         // Do not add this line if there are no @SubscribeEvent-annotated functions in this class, like onServerStarting() below.
         NeoForge.EVENT_BUS.register(this);
 
-        ModBrokenTools.register(modEventBus);
-        ModFixedTools.register(modEventBus);
+        BrokenTools.register(modEventBus);
+        FixedTools.register(modEventBus);
         ModMineralItems.register(modEventBus);
-        ModTools.register(modEventBus);
+        ForgedTools.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -55,40 +54,37 @@ public class CreateAdditions {
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if(event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
-            event.accept(ModBrokenTools.BROKEN_SWORD);
-            event.accept(ModBrokenTools.BROKEN_AXE);
-            event.accept(ModBrokenTools.BROKEN_PICKAXE);
-            event.accept(ModBrokenTools.BROKEN_SHOVEL);
-            event.accept(ModBrokenTools.BROKEN_HOE);
+            event.accept(BrokenTools.BROKEN_SWORD);
+            event.accept(BrokenTools.BROKEN_AXE);
+            event.accept(BrokenTools.BROKEN_PICKAXE);
+            event.accept(BrokenTools.BROKEN_SHOVEL);
+            event.accept(BrokenTools.BROKEN_HOE);
 
-            event.accept(ModFixedTools.FIXED_SWORD);
-            event.accept(ModFixedTools.FIXED_AXE);
-            event.accept(ModFixedTools.FIXED_PICKAXE);
-            event.accept(ModFixedTools.FIXED_SHOVEL);
-            event.accept(ModFixedTools.FIXED_HOE);
+            event.accept(FixedTools.FIXED_SWORD);
+            event.accept(FixedTools.FIXED_AXE);
+            event.accept(FixedTools.FIXED_PICKAXE);
+            event.accept(FixedTools.FIXED_SHOVEL);
+            event.accept(FixedTools.FIXED_HOE);
 
-            event.accept(ModTools.BRASS_AXE);
-            event.accept(ModTools.BRASS_PICKAXE);
-            event.accept(ModTools.BRASS_SHOVEL);
-            event.accept(ModTools.BRASS_HOE);
+            event.accept(ForgedTools.BRASS_AXE);
+            event.accept(ForgedTools.BRASS_PICKAXE);
+            event.accept(ForgedTools.BRASS_SHOVEL);
+            event.accept(ForgedTools.BRASS_HOE);
 
-            event.accept(ModTools.ANDESITE_AXE);
-            event.accept(ModTools.ANDESITE_PICKAXE);
-            event.accept(ModTools.ANDESITE_SHOVEL);
-            event.accept(ModTools.ANDESITE_HOE);
+            event.accept(ForgedTools.ANDESITE_AXE);
+            event.accept(ForgedTools.ANDESITE_PICKAXE);
+            event.accept(ForgedTools.ANDESITE_SHOVEL);
+            event.accept(ForgedTools.ANDESITE_HOE);
         }
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
-            event.accept(ModMineralItems.RAW_DARKSTEEL);
-            event.accept(ModMineralItems.DARKSTEEL_INGOT);
-            event.accept(ModMineralItems.BRINECORE_SHARD);
-            event.accept(ModMineralItems.TIDE_CRYSTAL);
+//            event.accept(ModMineralItems.EXAMPLE_INGREDIENT);
         }
         if(event.getTabKey() == CreativeModeTabs.COMBAT) {
-            event.accept(ModTools.BRASS_SWORD);
-            event.accept(ModTools.ANDESITE_SWORD);
+            event.accept(ForgedTools.BRASS_SWORD);
+            event.accept(ForgedTools.ANDESITE_SWORD);
 
-            event.accept(ModTools.BRASS_AXE);
-            event.accept(ModTools.ANDESITE_AXE);
+            event.accept(ForgedTools.BRASS_AXE);
+            event.accept(ForgedTools.ANDESITE_AXE);
         }
     }
 

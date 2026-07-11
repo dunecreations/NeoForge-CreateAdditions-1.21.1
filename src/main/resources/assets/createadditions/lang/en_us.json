@@ -11,8 +11,16 @@
   "item.createadditions.fixed_shovel": "Fixed Shovel",
   "item.createadditions.fixed_hoe": "Fixed Hoe",
 
-  "item.createadditions.raw_darksteel": "Raw Darksteel",
-  "item.createadditions.darksteel_ingot": "Darksteel Ingot",
-  "item.createadditions.brinecore_shard": "Brinecore Shard",
-  "item.createadditions.tide_crystal": "Tide Crystal"
+
+  "item.createadditions.brass_sword": "Brass Sword",
+  "item.createadditions.brass_axe": "Brass Axe",
+  "item.createadditions.brass_pickaxe": "Brass Pickaxe",
+  "item.createadditions.brass_shovel": "Brass Shovel",
+  "item.createadditions.brass_hoe": "Brass Hoe",
+
+  "item.createadditions.andesite_sword": "Andesite Sword",
+  "item.createadditions.andesite_axe": "Andesite Axe",
+  "item.createadditions.andesite_pickaxe": "Andesite Pickaxe",
+  "item.createadditions.andesite_shovel": "Andesite Shovel",
+  "item.createadditions.andesite_hoe": "Andesite Hoe"
 }

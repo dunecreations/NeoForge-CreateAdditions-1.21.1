@@ -6,23 +6,23 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
-public class ModFixedTools {
-    public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(CreateAdditions.MOD_ID);
+public class FixedTools {
+    public static final DeferredRegister.Items FIXED = DeferredRegister.createItems(CreateAdditions.MOD_ID);
 
-    public static final DeferredItem<Item> FIXED_SWORD = ITEMS.register("fixed_sword",
+    public static final DeferredItem<Item> FIXED_SWORD = FIXED.register("fixed_sword",
             () -> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> FIXED_AXE = ITEMS.register("fixed_axe",
+    public static final DeferredItem<Item> FIXED_AXE = FIXED.register("fixed_axe",
             () -> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> FIXED_PICKAXE = ITEMS.register("fixed_pickaxe",
+    public static final DeferredItem<Item> FIXED_PICKAXE = FIXED.register("fixed_pickaxe",
             () -> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> FIXED_SHOVEL = ITEMS.register("fixed_shovel",
+    public static final DeferredItem<Item> FIXED_SHOVEL = FIXED.register("fixed_shovel",
             () -> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> FIXED_HOE = ITEMS.register("fixed_hoe",
+    public static final DeferredItem<Item> FIXED_HOE = FIXED.register("fixed_hoe",
             () -> new Item(new Item.Properties()));
 
 
 
     public static void register(IEventBus eventBus) {
-        ITEMS.register(eventBus);
+        FIXED.register(eventBus);
     }
 }
