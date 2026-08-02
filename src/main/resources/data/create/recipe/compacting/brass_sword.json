@@ -1,0 +1,17 @@
+{
+  "type": "create:compacting",
+  "ingredients": [
+    {
+      "item": "create:brass_ingot"
+    },
+    {
+      "item": "emlloy:fixed_sword"
+    }
+  ],
+  "results": [
+    {
+      "id": "emlloy:brass_sword",
+      "count": 1
+    }
+  ]
+}

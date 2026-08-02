@@ -2,12 +2,12 @@
   "type": "create:pressing",
   "ingredients": [
     {
-      "item": "createadditions:broken_axe"
+      "item": "emlloy:broken_axe"
     }
   ],
   "results": [
     {
-      "id": "createadditions:fixed_axe"
+      "id": "emlloy:fixed_axe"
     }
   ]
 }

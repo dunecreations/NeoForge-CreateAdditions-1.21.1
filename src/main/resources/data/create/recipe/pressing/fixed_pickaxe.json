@@ -2,12 +2,12 @@
   "type": "create:pressing",
   "ingredients": [
     {
-      "item": "createadditions:broken_pickaxe"
+      "item": "emlloy:broken_pickaxe"
     }
   ],
   "results": [
     {
-      "id": "createadditions:fixed_pickaxe"
+      "id": "emlloy:fixed_pickaxe"
     }
   ]
 }

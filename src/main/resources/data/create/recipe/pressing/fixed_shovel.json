@@ -2,12 +2,12 @@
   "type": "create:pressing",
   "ingredients": [
     {
-      "item": "createadditions:broken_shovel"
+      "item": "emlloy:broken_shovel"
     }
   ],
   "results": [
     {
-      "id": "createadditions:fixed_shovel"
+      "id": "emlloy:fixed_shovel"
     }
   ]
 }

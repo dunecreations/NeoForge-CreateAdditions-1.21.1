@@ -1,0 +1,18 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "emlloy:rusted_scrap_metal"
+    },
+    {
+      "fluid": "minecraft:water",
+      "type": "neoforge:single",
+      "amount": 500
+    }
+  ],
+  "results": [
+    {
+      "id": "emlloy:scrap_metal"
+    }
+  ]
+}
