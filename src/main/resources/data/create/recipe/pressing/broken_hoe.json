@@ -1,0 +1,13 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "item": "emlloy:wooden_hoe"
+    }
+  ],
+  "results": [
+    {
+      "id": "emlloy:broken_hoe"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "item": "emlloy:scrap_metal"
+    }
+  ],
+  "results": [
+    {
+      "id": "emlloy:scrap_metal_sheet"
+    }
+  ]
+}

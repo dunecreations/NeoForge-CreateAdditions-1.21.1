@@ -1,8 +1,13 @@
 package net.bounded.emlloy;
 
+import net.bounded.emlloy.init.EmlloyBucketItems;
+import net.bounded.emlloy.init.EmlloyModBlocks;
+import net.bounded.emlloy.init.EmlloyModFluidTypes;
+import net.bounded.emlloy.init.EmlloyModFluids;
 import net.bounded.emlloy.item.EMAlloys;
 import net.bounded.emlloy.item.ForgedTools;
 import net.bounded.emlloy.item.ModMineralItems;
+import net.bounded.emlloy.item.MoltenMetalBucket;
 import net.bounded.emlloy.item.scrap.BrokenTools;
 import net.bounded.emlloy.item.scrap.FixedTools;
 import net.bounded.emlloy.item.scrap.Scrap;
@@ -47,6 +52,11 @@ public class CreateEmlloy {
         ForgedTools.register(modEventBus);
         Scrap.register(modEventBus);
         EMAlloys.register(modEventBus);
+
+        EmlloyModBlocks.REGISTRY.register(modEventBus);
+        EmlloyBucketItems.REGISTRY.register(modEventBus);
+        EmlloyModFluids.REGISTRY.register(modEventBus);
+        EmlloyModFluidTypes.REGISTRY.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);

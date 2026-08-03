@@ -1,0 +1,13 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "item": "emlloy:wooden_pickaxe"
+    }
+  ],
+  "results": [
+    {
+      "id": "emlloy:broken_pickaxe"
+    }
+  ]
+}
