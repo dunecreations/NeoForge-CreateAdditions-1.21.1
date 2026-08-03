@@ -1,4 +1,4 @@
-package net.bounded.emlloy.item.scrap;
+package net.bounded.emlloy.item.tools;
 
 import net.bounded.emlloy.CreateEmlloy;
 import net.minecraft.world.item.Item;
@@ -6,7 +6,7 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
-public class FixedTools {
+public class FixedCoatedTools {
     public static final DeferredRegister.Items FIXED = DeferredRegister.createItems(CreateEmlloy.MOD_ID);
 
     public static final DeferredItem<Item> FIXED_SWORD = FIXED.register("fixed_sword",

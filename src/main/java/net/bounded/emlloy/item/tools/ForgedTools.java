@@ -1,4 +1,4 @@
-package net.bounded.emlloy.item;
+package net.bounded.emlloy.item.tools;
 
 import net.bounded.emlloy.CreateEmlloy;
 import net.minecraft.world.item.*;

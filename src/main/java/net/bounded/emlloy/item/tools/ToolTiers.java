@@ -1,4 +1,4 @@
-package net.bounded.emlloy.item;
+package net.bounded.emlloy.item.tools;
 
 import net.bounded.emlloy.item.util.ModTags;
 import net.minecraft.world.item.Tier;

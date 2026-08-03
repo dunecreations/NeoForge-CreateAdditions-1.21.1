@@ -10,11 +10,17 @@
   "item.emlloy.broken_shovel": "Broken Shovel",
   "item.emlloy.broken_hoe": "Broken Hoe",
 
-  "item.emlloy.fixed_sword": "Fixed Sword",
-  "item.emlloy.fixed_axe": "Fixed Axe",
-  "item.emlloy.fixed_pickaxe": "Fixed Pickaxe",
-  "item.emlloy.fixed_shovel": "Fixed Shovel",
-  "item.emlloy.fixed_hoe": "Fixed Hoe",
+  "item.emlloy.broken_coated_sword": "Broken Coated Sword",
+  "item.emlloy.broken_coated_axe": "Broken Coated Axe",
+  "item.emlloy.broken_coated_pickaxe": "Broken Coated Pickaxe",
+  "item.emlloy.broken_coated_shovel": "Broken Coated Shovel",
+  "item.emlloy.broken_coated_hoe": "Broken Coated Hoe",
+
+  "item.emlloy.fixed_coated_sword": "Fixed Coated Sword",
+  "item.emlloy.fixed_coated_axe": "Fixed Coated Axe",
+  "item.emlloy.fixed_coated_pickaxe": "Fixed Coated Pickaxe",
+  "item.emlloy.fixed_coated_shovel": "Fixed Coated Shovel",
+  "item.emlloy.fixed_coated_hoe": "Fixed Coated Hoe",
 
 
   "item.emlloy.brass_sword": "Brass Sword",

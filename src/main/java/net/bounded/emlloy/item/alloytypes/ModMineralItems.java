@@ -1,4 +1,4 @@
-package net.bounded.emlloy.item;
+package net.bounded.emlloy.item.alloytypes;
 
 import net.bounded.emlloy.CreateEmlloy;
 import net.neoforged.bus.api.IEventBus;

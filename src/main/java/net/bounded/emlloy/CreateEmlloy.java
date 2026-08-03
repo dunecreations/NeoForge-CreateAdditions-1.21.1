@@ -4,13 +4,13 @@ import net.bounded.emlloy.init.EmlloyBucketItems;
 import net.bounded.emlloy.init.EmlloyModBlocks;
 import net.bounded.emlloy.init.EmlloyModFluidTypes;
 import net.bounded.emlloy.init.EmlloyModFluids;
-import net.bounded.emlloy.item.EMAlloys;
-import net.bounded.emlloy.item.ForgedTools;
-import net.bounded.emlloy.item.ModMineralItems;
-import net.bounded.emlloy.item.MoltenMetalBucket;
-import net.bounded.emlloy.item.scrap.BrokenTools;
-import net.bounded.emlloy.item.scrap.FixedTools;
-import net.bounded.emlloy.item.scrap.Scrap;
+import net.bounded.emlloy.item.alloytypes.EMAlloys;
+import net.bounded.emlloy.item.tools.BrokenCoatedTools;
+import net.bounded.emlloy.item.tools.ForgedTools;
+import net.bounded.emlloy.item.alloytypes.ModMineralItems;
+import net.bounded.emlloy.item.tools.BrokenTools;
+import net.bounded.emlloy.item.tools.FixedCoatedTools;
+import net.bounded.emlloy.item.alloytypes.Scrap;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -41,13 +41,11 @@ public class CreateEmlloy {
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 
-        // Register ourselves for server and other game events we are interested in.
-        // Note that this is necessary if and only if we want *this* class (ExampleMod) to respond directly to events.
-        // Do not add this line if there are no @SubscribeEvent-annotated functions in this class, like onServerStarting() below.
         NeoForge.EVENT_BUS.register(this);
 
         BrokenTools.register(modEventBus);
-        FixedTools.register(modEventBus);
+        BrokenCoatedTools.register(modEventBus);
+        FixedCoatedTools.register(modEventBus);
         ModMineralItems.register(modEventBus);
         ForgedTools.register(modEventBus);
         Scrap.register(modEventBus);
@@ -60,8 +58,21 @@ public class CreateEmlloy {
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
+
+        // CRUCIAL ADDITION: Register your bucket's fluid capabilities
+        modEventBus.addListener(this::registerCapabilities);
+
         // Register our mod's ModConfigSpec so that FML can create and load the config file for us
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
+    }
+
+    // Tells NeoForge that your custom bucket item acts as a valid fluid container
+    private void registerCapabilities(net.neoforged.neoforge.capabilities.RegisterCapabilitiesEvent event) {
+        event.registerItem(
+                net.neoforged.neoforge.capabilities.Capabilities.FluidHandler.ITEM,
+                (itemStack, context) -> new net.neoforged.neoforge.fluids.capability.wrappers.FluidBucketWrapper(itemStack),
+                EmlloyBucketItems.MOLTEN_METAL_BUCKET.get() // <-- Verifies that this matches your registered holder name
+        );
     }
 
     private void commonSetup(FMLCommonSetupEvent event) {
@@ -77,11 +88,11 @@ public class CreateEmlloy {
             event.accept(BrokenTools.BROKEN_SHOVEL);
             event.accept(BrokenTools.BROKEN_HOE);
 
-            event.accept(FixedTools.FIXED_SWORD);
-            event.accept(FixedTools.FIXED_AXE);
-            event.accept(FixedTools.FIXED_PICKAXE);
-            event.accept(FixedTools.FIXED_SHOVEL);
-            event.accept(FixedTools.FIXED_HOE);
+            event.accept(FixedCoatedTools.FIXED_SWORD);
+            event.accept(FixedCoatedTools.FIXED_AXE);
+            event.accept(FixedCoatedTools.FIXED_PICKAXE);
+            event.accept(FixedCoatedTools.FIXED_SHOVEL);
+            event.accept(FixedCoatedTools.FIXED_HOE);
 
             event.accept(ForgedTools.BRASS_AXE);
             event.accept(ForgedTools.BRASS_PICKAXE);

@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "emlloy:item/fixed_hoe"
+    "layer0": "emlloy:item/fixed_coated_hoe"
   }
 }

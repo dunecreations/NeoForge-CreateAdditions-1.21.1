@@ -1,4 +1,4 @@
-package net.bounded.emlloy.item.scrap;
+package net.bounded.emlloy.item.alloytypes;
 
 import net.bounded.emlloy.CreateEmlloy;
 import net.minecraft.world.item.Item;

@@ -6,6 +6,7 @@ import net.neoforged.neoforge.client.extensions.common.RegisterClientExtensionsE
 import net.neoforged.neoforge.client.extensions.common.IClientFluidTypeExtensions;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.fml.common.Mod; // Ensure this import or use your main class reference
 
 import net.minecraft.world.level.pathfinder.PathType;
 import net.minecraft.sounds.SoundEvents;
@@ -13,8 +14,10 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.registries.BuiltInRegistries;
 
 import net.bounded.emlloy.init.EmlloyModFluidTypes;
+import net.bounded.emlloy.CreateEmlloy; // Double-check your main mod class import
 
-@EventBusSubscriber
+// CRUCIAL FIX: Specify your MOD_ID and target the MOD event bus, otherwise this event never fires.
+@EventBusSubscriber(modid = CreateEmlloy.MOD_ID, bus = EventBusSubscriber.Bus.MOD)
 public class MoltenMetalFluidType extends FluidType {
 	public MoltenMetalFluidType() {
 		super(Properties.create().canSwim(false).canDrown(false).pathType(PathType.LAVA).adjacentPathType(null).motionScale(0.007D).lightLevel(2).temperature(1000).canConvertToSource(true)
