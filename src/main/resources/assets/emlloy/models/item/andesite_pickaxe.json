@@ -1,6 +1,6 @@
 {
   "parent": "item/handheld",
-  "texture": {
+  "textures": {
     "layer0": "emlloy:item/andesite_pickaxe"
   }
 }

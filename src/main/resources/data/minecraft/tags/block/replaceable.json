@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "emlloy:molten_metal"
+    "emlloy:molten_metal",
+    "emlloy:molten_brass"
   ]
 }

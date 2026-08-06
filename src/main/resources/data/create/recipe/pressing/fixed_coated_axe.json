@@ -1,0 +1,13 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "item": "emlloy:broken_coated_axe"
+    }
+  ],
+  "results": [
+    {
+      "id": "emlloy:fixed_coated_axe"
+    }
+  ]
+}

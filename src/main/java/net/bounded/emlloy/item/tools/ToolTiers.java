@@ -10,7 +10,7 @@ public class ToolTiers {
             420, 7, 2.5f, 18, () -> Ingredient.of(ModTags.Items.BRASS_INGOT)
     );
     public static final Tier ANDESITE = new SimpleTier(ModTags.Blocks.INCORRECT_FOR_ANDESITE_TOOL,
-            330, 6.5f, 2.0f, 18, () -> Ingredient.of(ModTags.Items.ANDESITE_ALLOY)
+            330, 6.5f, 1.8f, 18, () -> Ingredient.of(ModTags.Items.ANDESITE_ALLOY)
     );
 
 }

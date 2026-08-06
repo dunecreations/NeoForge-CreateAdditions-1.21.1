@@ -1,7 +1,8 @@
 package net.bounded.emlloy;
 
+import net.bounded.emlloy.block.natural.DirtTypes;
 import net.bounded.emlloy.init.EmlloyBucketItems;
-import net.bounded.emlloy.init.EmlloyModBlocks;
+import net.bounded.emlloy.init.EmlloyFluidBlocks;
 import net.bounded.emlloy.init.EmlloyModFluidTypes;
 import net.bounded.emlloy.init.EmlloyModFluids;
 import net.bounded.emlloy.item.alloytypes.EMAlloys;
@@ -50,11 +51,12 @@ public class CreateEmlloy {
         ForgedTools.register(modEventBus);
         Scrap.register(modEventBus);
         EMAlloys.register(modEventBus);
+        DirtTypes.register(modEventBus);
 
-        EmlloyModBlocks.REGISTRY.register(modEventBus);
+        EmlloyFluidBlocks.REGISTRY.register(modEventBus);
         EmlloyBucketItems.REGISTRY.register(modEventBus);
         EmlloyModFluids.REGISTRY.register(modEventBus);
-        EmlloyModFluidTypes.REGISTRY.register(modEventBus);
+        EmlloyModFluidTypes.REGISTER.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -73,6 +75,11 @@ public class CreateEmlloy {
                 (itemStack, context) -> new net.neoforged.neoforge.fluids.capability.wrappers.FluidBucketWrapper(itemStack),
                 EmlloyBucketItems.MOLTEN_METAL_BUCKET.get() // <-- Verifies that this matches your registered holder name
         );
+        event.registerItem(
+                net.neoforged.neoforge.capabilities.Capabilities.FluidHandler.ITEM,
+                (itemStack, context) -> new net.neoforged.neoforge.fluids.capability.wrappers.FluidBucketWrapper(itemStack),
+                EmlloyBucketItems.MOLTEN_BRASS_BUCKET.get() // <-- Verifies that this matches your registered holder name
+        );
     }
 
     private void commonSetup(FMLCommonSetupEvent event) {
@@ -82,17 +89,36 @@ public class CreateEmlloy {
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if(event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
+            event.accept(Scrap.RUSTED_SCRAP_METAL);
+            event.accept(Scrap.SCRAP_METAL);
+            event.accept(Scrap.RUSTED_SCRAP_METAL_SHEET);
+            event.accept(Scrap.SCRAP_METAL_SHEET);
+
+            event.accept(EMAlloys.PLAIN_COIN);
+            event.accept(EMAlloys.TEN_CENTS);
+            event.accept(EMAlloys.FIFTY_CENTS);
+            event.accept(EMAlloys.ONE_FRITZ);
+            event.accept(EMAlloys.TWO_FRITZ);
+            event.accept(EMAlloys.FIVE_FRITZ);
+            event.accept(EMAlloys.REFORGED_BRITZ);
+
             event.accept(BrokenTools.BROKEN_SWORD);
             event.accept(BrokenTools.BROKEN_AXE);
             event.accept(BrokenTools.BROKEN_PICKAXE);
             event.accept(BrokenTools.BROKEN_SHOVEL);
             event.accept(BrokenTools.BROKEN_HOE);
 
-            event.accept(FixedCoatedTools.FIXED_SWORD);
-            event.accept(FixedCoatedTools.FIXED_AXE);
-            event.accept(FixedCoatedTools.FIXED_PICKAXE);
-            event.accept(FixedCoatedTools.FIXED_SHOVEL);
-            event.accept(FixedCoatedTools.FIXED_HOE);
+            event.accept(BrokenCoatedTools.BROKEN_COATED_SWORD);
+            event.accept(BrokenCoatedTools.BROKEN_COATED_AXE);
+            event.accept(BrokenCoatedTools.BROKEN_COATED_PICKAXE);
+            event.accept(BrokenCoatedTools.BROKEN_COATED_SHOVEL);
+            event.accept(BrokenCoatedTools.BROKEN_COATED_HOE);
+
+            event.accept(FixedCoatedTools.FIXED_COATED_SWORD);
+            event.accept(FixedCoatedTools.FIXED_COATED_AXE);
+            event.accept(FixedCoatedTools.FIXED_COATED_PICKAXE);
+            event.accept(FixedCoatedTools.FIXED_COATED_SHOVEL);
+            event.accept(FixedCoatedTools.FIXED_COATED_HOE);
 
             event.accept(ForgedTools.BRASS_AXE);
             event.accept(ForgedTools.BRASS_PICKAXE);
@@ -105,7 +131,7 @@ public class CreateEmlloy {
             event.accept(ForgedTools.ANDESITE_HOE);
         }
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
-//            event.accept(ModMineralItems.EXAMPLE_INGREDIENT);
+            event.accept(EMAlloys.REFORGED_IRON);
         }
         if(event.getTabKey() == CreativeModeTabs.COMBAT) {
             event.accept(ForgedTools.BRASS_SWORD);

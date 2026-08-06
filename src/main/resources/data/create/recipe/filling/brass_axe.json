@@ -1,0 +1,18 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "emlloy:fixed_coated_axe"
+    },
+    {
+      "fluid": "emlloy:molten_brass",
+      "type": "fluid_stack",
+      "amount": 500
+    }
+  ],
+  "results": [
+    {
+      "id": "emlloy:brass_axe"
+    }
+  ]
+}

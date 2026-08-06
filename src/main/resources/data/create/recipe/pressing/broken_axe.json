@@ -2,7 +2,7 @@
   "type": "create:pressing",
   "ingredients": [
     {
-      "item": "emlloy:wooden_axe"
+      "item": "minecraft:wooden_axe"
     }
   ],
   "results": [

@@ -1,0 +1,18 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "emlloy:broken_axe"
+    },
+    {
+      "fluid": "emlloy:molten_metal",
+      "type": "neoforge:single",
+      "amount": 500
+    }
+  ],
+  "results": [
+    {
+      "id": "emlloy:broken_coated_axe"
+    }
+  ]
+}

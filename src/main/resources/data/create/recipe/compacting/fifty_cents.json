@@ -2,15 +2,13 @@
   "type": "create:compacting",
   "ingredients": [
     {
-      "item": "create:brass_ingot"
-    },
-    {
-      "item": "emlloy:fixed_sword"
+      "item": "emlloy:plain_coin",
+      "count": 9
     }
   ],
   "results": [
     {
-      "id": "emlloy:brass_sword",
+      "id": "emlloy:fifty_cents",
       "count": 1
     }
   ]

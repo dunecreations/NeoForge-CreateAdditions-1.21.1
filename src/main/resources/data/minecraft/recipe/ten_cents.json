@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "emlloy:plain_coin"
+    },
+    {
+      "item": "emlloy:plain_coin"
+    },
+    {
+      "item": "emlloy:plain_coin"
+    }
+  ],
+  "result": {
+    "id": "emlloy:ten_cents",
+    "count": 1
+  }
+}

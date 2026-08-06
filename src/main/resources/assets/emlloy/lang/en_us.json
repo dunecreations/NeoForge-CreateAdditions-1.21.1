@@ -1,8 +1,21 @@
 {
+  "item.emlloy.reforged_britz.lore.line1": "§7This coin is the equivalence of §4§l50 Fritz§r§7.",
+
+  "block.emlloy.buried_scrap": "Buried Scrap",
+
   "item.emlloy.rusted_scrap_metal": "Rusted Scrap Metal",
   "item.emlloy.scrap_metal": "Scrap Metal",
   "item.emlloy.rusted_scrap_metal_sheet": "Rusted Scrap Metal Sheet",
   "item.emlloy.scrap_metal_sheet": "Scrap Metal Sheet",
+  "item.emlloy.reforged_iron": "Reforged Iron",
+
+  "item.emlloy.plain_coin": "Plain Coin",
+  "item.emlloy.ten_cents": "Ten Cents",
+  "item.emlloy.fifty_cents": "Fifty Cents",
+  "item.emlloy.one_fritz": "One Fritz",
+  "item.emlloy.two_fritz": "Two Fritz",
+  "item.emlloy.five_fritz": "Five Fritz",
+  "item.emlloy.reforged_britz": "Reforged Britz",
 
   "item.emlloy.broken_sword": "Broken Sword",
   "item.emlloy.broken_axe": "Broken Axe",
@@ -35,8 +48,13 @@
   "item.emlloy.andesite_shovel": "Andesite Shovel",
   "item.emlloy.andesite_hoe": "Andesite Hoe",
 
+
   "item.emlloy.molten_metal_bucket": "Molten Metal Bucket",
   "fluid_type.emlloy.molten_metal": "Molten Metal",
   "block.emlloy.molten_metal": "Molten Metal",
-  "fluid.emlloy.molten_metal": "Molten Metal"
+  "fluid.emlloy.molten_metal": "Molten Metal",
+  "item.emlloy.molten_brass_bucket": "Molten Brass Bucket",
+  "fluid_type.emlloy.molten_brass": "Molten Brass",
+  "block.emlloy.molten_brass": "Molten Brass",
+  "fluid.emlloy.molten_brass": "Molten Brass"
 }

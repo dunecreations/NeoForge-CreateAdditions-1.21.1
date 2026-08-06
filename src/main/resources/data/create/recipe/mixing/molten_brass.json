@@ -1,0 +1,21 @@
+{
+  "type": "create:mixing",
+  "heat_requirement": "heated",
+  "ingredients": [
+    {
+      "item": "create:brass_ingot",
+      "count": 1
+    },
+    {
+      "fluid": "minecraft:water",
+      "type": "neoforge:single",
+      "amount": 1000
+    }
+  ],
+  "results": [
+    {
+      "id": "emlloy:molten_brass",
+      "amount": 1000
+    }
+  ]
+}

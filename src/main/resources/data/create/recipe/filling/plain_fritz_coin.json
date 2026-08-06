@@ -1,0 +1,18 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "emlloy:plain_coin"
+    },
+    {
+      "fluid": "emlloy:molten_brass",
+      "type": "neoforge:single",
+      "amount": 250
+    }
+  ],
+  "results": [
+    {
+      "id": "emlloy:plain_fritz_coin"
+    }
+  ]
+}

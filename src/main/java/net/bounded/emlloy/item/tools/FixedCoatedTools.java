@@ -7,22 +7,22 @@ import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
 public class FixedCoatedTools {
-    public static final DeferredRegister.Items FIXED = DeferredRegister.createItems(CreateEmlloy.MOD_ID);
+    public static final DeferredRegister.Items FIXEDCOATED = DeferredRegister.createItems(CreateEmlloy.MOD_ID);
 
-    public static final DeferredItem<Item> FIXED_SWORD = FIXED.register("fixed_sword",
+    public static final DeferredItem<Item> FIXED_COATED_SWORD = FIXEDCOATED.register("fixed_coated_sword",
             () -> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> FIXED_AXE = FIXED.register("fixed_axe",
+    public static final DeferredItem<Item> FIXED_COATED_AXE = FIXEDCOATED.register("fixed_coated_axe",
             () -> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> FIXED_PICKAXE = FIXED.register("fixed_pickaxe",
+    public static final DeferredItem<Item> FIXED_COATED_PICKAXE = FIXEDCOATED.register("fixed_coated_pickaxe",
             () -> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> FIXED_SHOVEL = FIXED.register("fixed_shovel",
+    public static final DeferredItem<Item> FIXED_COATED_SHOVEL = FIXEDCOATED.register("fixed_coated_shovel",
             () -> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> FIXED_HOE = FIXED.register("fixed_hoe",
+    public static final DeferredItem<Item> FIXED_COATED_HOE = FIXEDCOATED.register("fixed_coated_hoe",
             () -> new Item(new Item.Properties()));
 
 
 
     public static void register(IEventBus eventBus) {
-        FIXED.register(eventBus);
+        FIXEDCOATED.register(eventBus);
     }
 }

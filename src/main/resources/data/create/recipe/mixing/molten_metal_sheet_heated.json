@@ -1,0 +1,20 @@
+{
+  "type": "create:mixing",
+  "heat_requirement": "heated",
+  "ingredients": [
+    {
+      "tag": "emlloy:scrap_sheet"
+    },
+    {
+      "fluid": "minecraft:water",
+      "type": "neoforge:single",
+      "amount": 500
+    }
+  ],
+  "results": [
+    {
+      "id": "emlloy:molten_metal",
+      "amount": 500
+    }
+  ]
+}

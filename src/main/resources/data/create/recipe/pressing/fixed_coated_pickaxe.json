@@ -2,12 +2,12 @@
   "type": "create:pressing",
   "ingredients": [
     {
-      "item": "emlloy:broken_pickaxe"
+      "item": "emlloy:broken_coated_pickaxe"
     }
   ],
   "results": [
     {
-      "id": "emlloy:fixed_pickaxe"
+      "id": "emlloy:fixed_coated_pickaxe"
     }
   ]
 }

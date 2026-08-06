@@ -2,12 +2,12 @@
   "type": "create:pressing",
   "ingredients": [
     {
-      "item": "emlloy:broken_hoe"
+      "item": "emlloy:broken_coated_hoe"
     }
   ],
   "results": [
     {
-      "id": "emlloy:fixed_hoe"
+      "id": "emlloy:fixed_coated_hoe"
     }
   ]
 }

@@ -1,0 +1,22 @@
+{
+  "type": "create:compacting",
+  "ingredients": [
+    {
+      "item": "emlloy:fifty_cents"
+    },
+    {
+      "item": "emlloy:fifty_cents"
+    },
+    {
+      "fluid": "emlloy:molten_brass",
+      "type": "fluid_stack",
+      "amount": 500
+    }
+  ],
+  "results": [
+    {
+      "id": "emlloy:one_fritz",
+      "count": 1
+    }
+  ]
+}

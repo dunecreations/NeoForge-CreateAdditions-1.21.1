@@ -1,0 +1,18 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "minecraft:iron_ingot"
+    },
+    {
+      "fluid": "emlloy:molten_metal",
+      "type": "neoforge:single",
+      "amount": 1000
+    }
+  ],
+  "results": [
+    {
+      "id": "emlloy:reforged_iron"
+    }
+  ]
+}

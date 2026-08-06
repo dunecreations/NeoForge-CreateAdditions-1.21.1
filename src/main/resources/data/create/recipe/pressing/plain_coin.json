@@ -2,12 +2,12 @@
   "type": "create:pressing",
   "ingredients": [
     {
-      "item": "emlloy:broken_axe"
+      "item": "minecraft:iron_ingot"
     }
   ],
   "results": [
     {
-      "id": "emlloy:fixed_axe"
+      "id": "emlloy:plain_coin"
     }
   ]
 }

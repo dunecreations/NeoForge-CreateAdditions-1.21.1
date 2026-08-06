@@ -1,0 +1,27 @@
+{
+  "type": "create:compacting",
+  "ingredients": [
+    {
+      "item": "emlloy:reforged_iron"
+    },
+    {
+      "item": "emlloy:plain_coin"
+    },
+    {
+      "fluid": "emlloy:molten_brass",
+      "type": "fluid_stack",
+      "amount": 250
+    },
+    {
+      "fluid": "emlloy:molten_metal",
+      "type": "fluid_stack",
+      "amount": 250
+    }
+  ],
+  "results": [
+    {
+      "id": "emlloy:reforged_britz",
+      "count": 1
+    }
+  ]
+}

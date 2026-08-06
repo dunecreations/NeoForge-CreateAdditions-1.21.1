@@ -2,12 +2,12 @@
   "type": "create:pressing",
   "ingredients": [
     {
-      "item": "emlloy:broken_sword"
+      "item": "emlloy:broken_coated_sword"
     }
   ],
   "results": [
     {
-      "id": "emlloy:fixed_sword"
+      "id": "emlloy:fixed_coated_sword"
     }
   ]
 }

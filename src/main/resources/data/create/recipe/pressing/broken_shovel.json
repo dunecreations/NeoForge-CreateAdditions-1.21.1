@@ -2,7 +2,7 @@
   "type": "create:pressing",
   "ingredients": [
     {
-      "item": "emlloy:wooden_shovel"
+      "item": "minecraft:wooden_shovel"
     }
   ],
   "results": [
